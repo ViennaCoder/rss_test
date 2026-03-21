@@ -1,15 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Test RSS Feed</title>
-    <link>https://example.com</link>
-    <description>Ein einfacher Testfeed</description>
+    <title>ViennaCoder – Test RSS</title>
+    <link>https://viennacoder.github.io/rss_test/</link>
+    <description>Testfeed mit Bild und Text</description>
+    <language>de</language>
+    <lastBuildDate>Sat, 21 Mar 2026 05:30:00 GMT</lastBuildDate>
 
     <item>
-      <title>Testeintrag 1</title>
-      <link>https://example.com/test1</link>
-      <description>Dies ist ein Test.</description>
-      <pubDate>Mon, 20 Mar 2026 10:00:00 GMT</pubDate>
+      <title>Hallo RSS – Bild & Text</title>
+      <link>https://viennacoder.github.io/rss_test/</link>
+      <guid isPermaLink="false">urn:viennacoder:test:1</guid>
+      <pubDate>Sat, 21 Mar 2026 05:00:00 GMT</pubDate>
+
+      <!-- Media-RSS: Bildangabe -->
+      <media:content url="https://viennacoder.github.io/rss_test/img/XylamosLogo_432.png"
+                     medium="image" type="image/png" width="432" height="432">
+        <media:title>Beispielbild</media:title>
+        <media:description>Kurzer Untertitel zum Bild.</media:description>
+      </media:content>
+
+      <!-- Optionales enclosure (einige Reader zeigen das Bild dann an) -->
+      <enclosure url="https://viennacoder.github.io/rss_test/img/XylamosLogo_432.png"
+                 type="image/png" length="0" />
+
+      <!-- Volltext mit HTML: Bild + Text -->
+      <content:encoded><![CDATA[
+        <figure>
+          <img src="https://viennacoder.github.io/rss_test/img/XylamosLogo_432.png" alt="Beispielbild" style="max-width:100%;height:auto;" />
+          <figcaption>Kurzer Untertitel zum Bild.</figcaption>
+        </figure>
+        <p>Dies ist ein Testeintrag mit einem eingebetteten Bild und etwas erklärendem Text.</p>
+      ]]></content:encoded>
+
+      <!-- Plain-Text Fallback -->
+      <description>Dies ist ein Testeintrag mit Bild (siehe content:encoded oder enclosure).</description>
     </item>
 
   </channel>
