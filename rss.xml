@@ -10,7 +10,7 @@
     <lastBuildDate>Sat, 21 Mar 2026 05:30:00 GMT</lastBuildDate>
 
     <item>
-      <title>Hallo RSS – Bild & Text</title>
+      <title>Hallo RSS – Bild und Text</title>
       <link>https://viennacoder.github.io/rss_test/</link>
       <guid isPermaLink="false">urn:viennacoder:test:1</guid>
       <pubDate>Sat, 21 Mar 2026 05:00:00 GMT</pubDate>
@@ -26,6 +26,17 @@
       <enclosure url="https://viennacoder.github.io/rss_test/img/XylamosLogo_432.png"
                  type="image/png" length="0" />
 
+      <!-- Volltext mit HTML: Bild + Text -->
+      <content:encoded><![CDATA[
+        <figure>
+          <img src="https://viennacoder.github.io/rss_test/img/XylamosLogo_432.png" alt="Beispielbild" style="max-width:100%;height:auto;" />
+          <figcaption>Kurzer Untertitel zum Bild.</figcaption>
+        </figure>
+        <p>Dies ist ein Testeintrag mit einem eingebetteten Bild und etwas erklärendem Text.</p>
+      ]]></content:encoded>
+
+      <!-- Plain-Text Fallback -->
+      <description>Dies ist ein Testeintrag mit Bild (siehe content:encoded oder enclosure).</description>
     </item>
 
   </channel>
