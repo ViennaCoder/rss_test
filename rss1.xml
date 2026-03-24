@@ -7,12 +7,20 @@
     <description>Gemeindegebet am 25.03 um 19:30 Uhr</description>
 
     <item>
-      <title>Bibel</title>
+      <title>Gemeindegebet</title>
       <content:encoded><![CDATA[
         <img src="https://viennacoder.github.io/rss_test/img/bibelstudium.jpg"
              alt="bibelstudium" style="max-width:100%; height:auto;" />
       ]]></content:encoded>
-         <description>Gemeindegebet am 25.03 um 19:30 Uhr</description>
+         <description>am 25.03 um 19:30 Uhr</description>
+    </item>
+     <item>
+      <title>Karfreitag</title>
+      <content:encoded><![CDATA[
+        <img src="https://viennacoder.github.io/rss_test/img/bibelstudium.jpg"
+             alt="Andacht" style="max-width:100%; height:auto;" />
+      ]]></content:encoded>
+         <description>Karfreitaggottesdienst am 03.04 um 19:30 Uhr</description>
     </item>
 
   </channel>
