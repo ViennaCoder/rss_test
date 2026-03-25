@@ -4,16 +4,8 @@
   <channel>
     <title>rss_test</title>
     <link>https://egfloridsdorf.at</link>
-    <description>Gemeindegebet am 25.03 um 19:30 Uhr</description>
+    <description>Ankündigungen</description>
 
-    <item>
-      <title>Gemeindegebet</title>
-      <content:encoded><![CDATA[
-        <img src="https://viennacoder.github.io/rss_test/img/bibelstudium.jpg"
-             alt="bibelstudium" style="max-width:100%; height:auto;" />
-      ]]></content:encoded>
-         <description>am 25.03 um 19:30 Uhr</description>
-    </item>
      <item>
       <title>Karfreitag</title>
       <content:encoded><![CDATA[
@@ -22,6 +14,13 @@
       ]]></content:encoded>
          <description>Karfreitaggottesdienst am 03.04 um 19:30 Uhr</description>
     </item>
-
+    <item>
+      <title>Ostergottesdienst</title>
+      <content:encoded><![CDATA[
+        <img src="https://viennacoder.github.io/rss_test/img/osterbild.png"
+             alt="Ostern" style="max-width:100%; height:auto;" />
+      ]]></content:encoded>
+         <description>am 05.04 um 10:00 Uhr</description>
+    </item>
   </channel>
 </rss>
